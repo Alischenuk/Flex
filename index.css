@@ -1,0 +1,66 @@
+body {	
+	background: #4ED532;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section {
+	width: 300px;
+	height: 500px;
+	background: #fff;		
+	margin: 25px;
+}
+h3, h4 {
+	margin: 5px 10px;
+	text-align: center;
+}
+.block .square {
+	width: 55px;
+	height: 55px;
+	background: #C4FFC2;
+	border: 2px dotted #29BB2E;
+	display: inline-block;	
+	margin: 2px 5px;
+}
+.block .square:nth-child(4n+2),
+.block .square:nth-child(4n+3){
+	background: #13E08A;
+}
+.block {
+	display: flex;
+	height: 200px;
+}
+.block.aflexend {	
+	align-items: flex-end;	
+}
+.block.acenter {
+	align-items:  center;
+}
+.block.wrapcenter {
+	flex-wrap: wrap;
+	align-content: center;
+}
+.block.wraparound {
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+.block.justbetween {
+	justify-content: space-between;
+	height: 80px;
+	align-items:  center;
+}
+.block.justflexend {
+	justify-content: flex-end;
+	height: 80px;
+	align-items:  center;
+}
+.block.justevenly {
+	justify-content: space-evenly;
+	height: 80px;
+	align-items:  center;
+}
+.block.justcenter {
+	justify-content: center;
+	height: 80px;
+	align-items:  center;
+}
